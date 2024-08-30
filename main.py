@@ -1,4 +1,4 @@
-import pygame, sys
+import pygame, sys, random
 from pygame.locals import *
 
 pygame.init()
@@ -9,4 +9,7 @@ while True:
         if event.type == QUIT:
             pygame.quit()
             sys.exit()
+
+        if event.type == KEYDOWN:
+            pygame.display.set_caption('You Press Something!')
     pygame.display.update()
